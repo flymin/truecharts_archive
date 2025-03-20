@@ -29,6 +29,65 @@ Now you should be able to update your applications again.
 ### 2025.01.08: Thanks to [@hey101](https://github.com/hey101/TrueCharts-Update-Script), I have now a more automated update system. All apps should now as much up-to-date as the original TrueCharts currently is. Feel free to open an issue if you miss an update!
 
 - ### Changelog:
+	- 2025.03.20 @ 05:00 PM CET:
+		- Premium:
+			- nextcloud: v30.0.6 --> v31.0.0
+	- 2025.03.20 @ 04:47 PM CET:
+		- Premium:
+			- nextcloud: v31.0.2 --> v30.0.6
+	- 2025.03.20 @ 04:44 PM CET:
+		- Stable:
+			- homepage: v0.10.9 --> v1.0.4
+	- 2025.03.20 @ 04:36 PM CET:
+		- Stable:
+			- jackett: v0.22.1665 --> v0.22.1669
+		- Premium:
+			- nextcloud: v30.0.6 --> v31.0.2
+	- 2025.03.20 @ 12:55 PM CET:
+		- Stable:
+			- homepage: v0.10.9 --> v1.0.4
+			- memcached: v1.6.37 --> v1.6.38
+			- oscam: v11874.0.0 --> v11876.0.0
+			- radarr: v5.20.1.9773 --> v5.20.2.9777
+			- strapi: v5.11.2 --> v5.11.3
+			- theme-park: v1.18.0 --> v1.20.0
+			- wallos: v2.46.1 --> v2.47.1
+	- 2025.03.19 @ 10:38 PM CET:
+		- Stable:
+			- homepage: v1.0.4_10 --> v1.0.4_12
+	- 2025.03.19 @ 10:18 PM CET:
+		- Stable:
+			- homepage: v1.0.4_9 --> v1.0.4_10
+	- 2025.03.19 @ 10:03 PM CET:
+		- Stable:
+			- homepage: v1.0.4_8 --> v1.0.4_9
+	- 2025.03.19 @ 09:51 PM CET:
+		- Stable:
+			- homepage: v1.0.4_7 --> v1.0.4_8
+	- 2025.03.19 @ 09:47 PM CET:
+		- Stable:
+			- homepage: v1.0.4_6 --> v1.0.4_7
+	- 2025.03.19 @ 09:06 PM CET:
+		- Stable:
+			- homepage: v1.0.4_5 --> v1.0.4_6
+	- 2025.03.19 @ 08:59 PM CET:
+		- Stable:
+			- homepage: v1.0.4_4 --> v1.0.4_5
+	- 2025.03.19 @ 08:55 PM CET:
+		- Stable:
+			- homepage: v1.0.4_2 --> v1.0.4_4
+	- 2025.03.19 @ 08:38 PM CET:
+		- Stable:
+			- homepage: v1.0.4_2 --> v1.0.4_3
+	- 2025.03.19 @ 08:28 PM CET:
+		- Stable:
+			- homepage: v1.0.4_1 --> v1.0.4_2
+	- 2025.03.19 @ 08:09 PM CET:
+		- Stable:
+			- homepage: v1.0.4 --> v1.0.4_1
+	- 2025.03.19 @ 08:01 PM CET:
+		- Stable:
+			- netdata: v2.2.6 --> v2.3.0
 	- 2025.03.19 @ 07:21 PM CET:
 		- Premium:
 			- authelia: v4.39.1_3 --> v4.39.1
