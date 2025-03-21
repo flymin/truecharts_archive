@@ -29,6 +29,19 @@ Now you should be able to update your applications again.
 ### 2025.01.08: Thanks to [@hey101](https://github.com/hey101/TrueCharts-Update-Script), I have now a more automated update system. All apps should now as much up-to-date as the original TrueCharts currently is. Feel free to open an issue if you miss an update!
 
 - ### Changelog:
+	- 2025.03.20 @ 10:04 PM CET:
+		- Premium:
+			- nextcloud: v31.0.2_01 --> v31.0.2_02
+	- 2025.03.20 @ 09:54 PM CET:
+		- Stable:
+			- jupyter: v2025.3.17 --> v2025.3.20
+			- wallos: v2.47.1 --> v2.48.0
+	- 2025.03.20 @ 09:50 PM CET:
+		- Premium:
+			- nextcloud: v31.0.2 --> v31.0.2_01
+	- 2025.03.20 @ 08:19 PM CET:
+		- Premium:
+			- nextcloud: v31.0.0 --> v31.0.2
 	- 2025.03.20 @ 05:00 PM CET:
 		- Premium:
 			- nextcloud: v30.0.6 --> v31.0.0
