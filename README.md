@@ -29,6 +29,55 @@ Now you should be able to update your applications again.
 ### 2025.01.08: Thanks to [@hey101](https://github.com/hey101/TrueCharts-Update-Script), I have now a more automated update system. All apps should now as much up-to-date as the original TrueCharts currently is. Feel free to open an issue if you miss an update!
 
 - ### Changelog:
+	- 2025.04.28 @ 06:32 PM CEST:
+		- Stable:
+			- immich: v1.132.1 --> v1.132.3
+			- jackett: v0.22.1828 --> v0.22.1830
+	- 2025.04.28 @ 11:33 AM CEST:
+		- Stable:
+			- drawio: v26.2.8 --> v26.2.15
+			- flexget: v3.15.34 --> v3.15.37
+			- ghostfolio: v2.155.0 --> v2.156.0
+			- home-assistant: v2025.4.3 --> v2025.4.4
+			- jupyter: v2025.4.26 --> v2025.4.28
+			- openhab: v4.3.4 --> v4.3.5
+			- plexripper: v0.31.0 --> v0.31.1
+			- qbitmanage: v4.2.1 --> v4.2.2
+			- radicale: v3.5.1.0 --> v3.5.2.0
+			- traggo: v0.6.1 --> v0.7.0
+			- tsmuxer: v25.02.1 --> v25.04.1
+			- wekan: v7.85.0 --> v7.88.0
+			- xen-orchestra: v5.176.0 --> v5.176.1
+			- zwavejs2mqtt: v10.3.1 --> v10.3.3
+	- 2025.04.28 @ 03:25 AM CEST:
+		- Stable:
+			- adguardhome-sync: v0.7.3 --> v0.7.5
+			- automatic-ripping-machine: v2.12.1 --> v2.13.0
+			- chroma: v1.0.6 --> v1.0.7
+			- clickhouse: v25.3.2.39 --> v25.4.1.2934
+			- ghostfolio: v2.154.0 --> v2.155.0
+			- hasty-paste: v2.0.0 --> v2.1.0
+			- jackett: v0.22.1815 --> v0.22.1828
+			- jenkins: v2.506.0 --> v2.507.0
+			- jupyter: v2025.4.21 --> v2025.4.26
+			- metabase: v0.54.3 --> v0.54.4
+			- n8n: v1.90.1 --> v1.90.2
+			- octoprint: v1.10.3 --> v1.11.0
+			- oscam: v11880.0.0 --> v11882.0.0
+			- photoprism: v250321.0.0 --> v250426.0.0
+			- portainer: v2.29.0 --> v2.29.2
+			- radarr: v5.22.4.9896 --> v5.23.0.9907
+			- rdtclient: v2.0.109 --> v2.0.110
+			- redis: v7.4.2 --> v7.4.3
+			- romm: v3.8.0 --> v3.9.0
+			- sourcegraph: v6.2.2553 --> v6.2.3841
+			- speedtest-tracker: v1.4.2 --> v1.5.0
+			- strapi: v5.12.5 --> v5.12.6
+			- unifi: v9.0.114 --> v9.1.120
+			- wallos: v2.52.0 --> v2.52.2
+			- zwavejs2mqtt: v10.2.0 --> v10.3.1
+		- Premium:
+			- grafana: v11.6.0 --> v11.6.1
 	- 2025.04.24 @ 12:56 PM CEST:
 		- Stable:
 			- ollama: v0.6.6 --> v0.6.6
