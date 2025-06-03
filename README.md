@@ -29,6 +29,84 @@ Now you should be able to update your applications again.
 ### 2025.01.08: Thanks to [@hey101](https://github.com/hey101/TrueCharts-Update-Script), I have now a more automated update system. All apps should now as much up-to-date as the original TrueCharts currently is. Feel free to open an issue if you miss an update!
 
 - ### Changelog:
+	- 2025.06.03 @ 01:14 PM CEST:
+		- Stable:
+			- automatic-ripping-machine: v2.13.0 --> v2.15.0
+			- external-service: v3.21.3 --> v3.22.0
+			- freshrss: v1.26.2 --> v1.26.3
+			- metube: v2025.5.30 --> v2025.6.2
+			- misskey: v2025.5.1 --> v2025.6.0
+			- pgadmin: v9.3.0 --> v9.4.0
+			- qbitrr: v4.10.21 --> v4.10.23
+			- radarr: v5.25.0.10024 --> v5.26.0.10051
+			- restic-rest-server: v0.13.0 --> v0.14.0
+			- seafile: v12.0.11 --> v12.0.14
+			- sourcegraph: v6.3.4167 --> v6.4.0
+			- strapi: v5.13.1 --> v5.14.0
+			- syncthing: v1.29.6 --> v1.29.7
+			- tdarr: v2.40.01 --> v2.42.01
+			- tdarr-node: v2.40.01 --> v2.42.01
+			- xen-orchestra: v5.177.2 --> v5.178.1
+			- zigbee2mqtt: v2.3.0 --> v2.4.0
+			- zwavejs2mqtt: v10.5.1 --> v10.6.1
+	- 2025.06.03 @ 01:46 AM CEST:
+		- Stable:
+			- bookstack: v25.02.20250309 --> v25.05.20250531
+			- docker: v28.1.1 --> v28.2.2
+			- ghostfolio: v2.163.0 --> v2.165.0
+			- homepage: v1.2.0 --> v1.3.2
+			- jackett: v0.22.1971 --> v0.22.1978
+			- misskey: v2025.5.0 --> v2025.5.1
+			- nzbhydra: v7.14.0 --> v7.14.1
+	- 2025.06.03 @ 12:35 AM CEST:
+		- Stable:
+			- appdaemon: v4.5.2 --> v4.5.7
+			- audiobookshelf: v2.23.0 --> v2.24.0
+			- changedetection-io: v0.49.18_08 --> v0.49.18
+			- chroma: v1.0.10 --> v1.0.12
+			- collabora: v25.04.2.1.1 --> v25.04.2.2.1
+			- ddns-go: v6.9.3 --> v6.9.4
+			- flexget: v3.16.0 --> v3.16.3
+			- flowise: v3.0.0 --> v3.0.1
+			- jupyter: v2025.5.30 --> v2025.6.2
+			- lanraragi: v0.9.40 --> v0.9.41
+			- maintainerr: v2.15.0 --> v2.17.0
+			- metube: v2025.5.27 --> v2025.5.30
+			- n8n: v1.95.2 --> v1.97.0
+			- navidrome: v0.55.2 --> v0.56.1
+			- ntfy: v2.11.0 --> v2.12.0
+			- pihole: v2025.04.0 --> v2025.05.1
+	- 2025.06.02 @ 09:37 PM CEST:
+		- Stable:
+			- changedetection-io: v0.49.18_07 --> v0.49.18_08
+	- 2025.06.02 @ 09:32 PM CEST:
+		- Stable:
+			- changedetection-io: v0.49.18_06 --> v0.49.18_07
+	- 2025.06.02 @ 09:25 PM CEST:
+		- Stable:
+			- changedetection-io: v0.49.18_05 --> v0.49.18_06
+	- 2025.06.02 @ 09:22 PM CEST:
+		- Stable:
+			- changedetection-io: v0.49.18_04 --> v0.49.18_05
+	- 2025.06.02 @ 09:17 PM CEST:
+		- Stable:
+			- changedetection-io: v0.49.18_03 --> v0.49.18_04
+	- 2025.06.02 @ 09:13 PM CEST:
+		- Stable:
+			- changedetection-io: v0.49.18_02 --> v0.49.18_03
+	- 2025.06.02 @ 09:11 PM CEST:
+		- Stable:
+			- changedetection-io: v0.49.18_01 --> v0.49.18_02
+	- 2025.06.02 @ 09:09 PM CEST:
+		- Stable:
+			- jackett: v0.22.1960 --> v0.22.1971
+			- jupyter: v2025.5.26 --> v2025.5.30
+			- minio: v2025.04.22 --> v2025.05.24
+			- n8n: v1.95.1 --> v1.95.2
+			- nzbhydra: v7.13.2 --> v7.14.0
+			- tauticord: v5.13.1 --> v5.13.3
+			- wg-easy: v14.0.0 --> v15.0.0
+			- wizarr: v4.2.0 --> v2025.5.1
 	- 2025.05.31 @ 08:43 PM CEST:
 		- Stable:
 			- changedetection-io: v0.49.18 --> v0.49.18_01
