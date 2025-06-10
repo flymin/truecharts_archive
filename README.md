@@ -29,6 +29,75 @@ Now you should be able to update your applications again.
 ### 2025.01.08: Thanks to [@hey101](https://github.com/hey101/TrueCharts-Update-Script), I have now a more automated update system. All apps should now as much up-to-date as the original TrueCharts currently is. Feel free to open an issue if you miss an update!
 
 - ### Changelog:
+	- 2025.06.10 @ 05:23 PM CEST:
+		- Stable:
+			- immich: v1.134.0-03 --> v1.134.0-03
+			- immich-new: v1.134.0 --> v1.134.0
+	- 2025.06.10 @ 02:05 PM CEST:
+		- Stable:
+			- immich: v1.134.0-02 --> v1.134.0-03
+	- 2025.06.10 @ 01:58 PM CEST:
+		- Stable:
+			- immich: v1.134.0 --> v1.134.0-02
+	- 2025.06.10 @ 01:49 PM CEST:
+		- Stable:
+			- immich: v1.134.0-BREAKING-2 --> v1.134.0
+	- 2025.06.10 @ 01:14 PM CEST:
+		- Stable:
+			- immich: v1.134.0-BREAKING-1 --> v1.134.0-BREAKING-2
+	- 2025.06.10 @ 01:07 PM CEST:
+		- Stable:
+			- immich: v1.134.0 --> v1.134.0-BREAKING-1
+	- 2025.06.10 @ 01:04 PM CEST:
+		- Stable:
+			- immich: v1.134.0 --> v1.134.0
+	- 2025.06.10 @ 12:33 PM CEST:
+		- Stable:
+			- immich-new: v1.134.0 --> v1.134.0
+	- 2025.06.10 @ 12:18 PM CEST:
+		- Stable:
+			- immich-new: v1.134.0 --> v1.134.0
+	- 2025.06.10 @ 12:09 PM CEST:
+		- Stable:
+			- immich-new: v1.134.0 --> v1.134.0
+	- 2025.06.10 @ 03:02 AM CEST:
+		- Stable:
+			- immich: v1.134.0 --> v1.134.0
+			- immich-new: v1.134.0 --> v1.134.0
+	- 2025.06.10 @ 01:18 AM CEST:
+		- Stable:
+			- immich: v1.134-06 --> v1.134.0
+	- 2025.06.10 @ 12:50 AM CEST:
+		- System:
+			- cloudnative-pg: vlatest --> vlatest
+	- 2025.06.09 @ 11:55 PM CEST:
+		- Stable:
+			- immich-new: v1.134 --> v1.134.0
+	- 2025.06.09 @ 11:36 PM CEST:
+		- Stable:
+			- gokapi: v1.9.6 --> v2.0.1
+			- wallos: v3.2.0 --> v3.3.0
+	- 2025.06.09 @ 11:32 PM CEST:
+		- Stable:
+			- immich: v1.134-06 --> v1.134-06
+	- 2025.06.09 @ 09:15 PM CEST:
+		- Stable:
+			- immich: v1.134-05 --> v1.134-06
+	- 2025.06.09 @ 09:12 PM CEST:
+		- Stable:
+			- immich: v1.134-05 --> v1.134-05
+	- 2025.06.09 @ 07:17 PM CEST:
+		- Stable:
+			- immich: v1.134-04 --> v1.134-05
+	- 2025.06.09 @ 06:59 PM CEST:
+		- Stable:
+			- immich: v1.134-03 --> v1.134-04
+	- 2025.06.09 @ 06:52 PM CEST:
+		- Stable:
+			- immich: v1.134-02 --> v1.134-03
+	- 2025.06.09 @ 06:34 PM CEST:
+		- Stable:
+			- immich: v1.134-01 --> v1.134-02
 	- 2025.06.09 @ 06:25 PM CEST:
 		- Stable:
 			- immich: v1.134 --> v1.134-01
