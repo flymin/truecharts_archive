@@ -29,6 +29,63 @@ Now you should be able to update your applications again.
 ### 2025.01.08: Thanks to [@hey101](https://github.com/hey101/TrueCharts-Update-Script), I have now a more automated update system. All apps should now as much up-to-date as the original TrueCharts currently is. Feel free to open an issue if you miss an update!
 
 - ### Changelog:
+	- 2025.09.02 @ 05:02 PM CEST:
+		- Premium:
+			- authelia: v4.39.8.12 --> v4.39.8.13
+	- 2025.09.02 @ 04:47 PM CEST:
+		- Premium:
+			- authelia: v4.39.8.11 --> v4.39.8.12
+	- 2025.09.02 @ 04:09 PM CEST:
+		- Premium:
+			- authelia: v4.39.8.10 --> v4.39.8.11
+	- 2025.09.02 @ 03:52 PM CEST:
+		- Premium:
+			- authelia: v4.39.8.9 --> v4.39.8.10
+	- 2025.09.02 @ 03:45 PM CEST:
+		- Premium:
+			- authelia: v4.39.8.8 --> v4.39.8.9
+	- 2025.09.02 @ 02:09 PM CEST:
+		- Premium:
+			- authelia: v4.39.8.7 --> v4.39.8.8
+	- 2025.09.02 @ 02:01 PM CEST:
+		- Premium:
+			- authelia: v4.39.8.6 --> v4.39.8.7
+	- 2025.09.02 @ 01:49 PM CEST:
+		- Premium:
+			- authelia: v4.39.8.5 --> v4.39.8.6
+	- 2025.09.02 @ 01:44 PM CEST:
+		- Premium:
+			- authelia: v4.39.8.4 --> v4.39.8.5
+	- 2025.09.02 @ 01:35 PM CEST:
+		- Premium:
+			- authelia: v4.39.8.4 --> v4.39.8.4
+	- 2025.09.02 @ 01:23 PM CEST:
+		- Premium:
+			- authelia: v4.39.8.3 --> v4.39.8.4
+	- 2025.09.02 @ 01:19 PM CEST:
+		- Premium:
+			- authelia: v4.39.8.2 --> v4.39.8.3
+	- 2025.09.02 @ 01:14 PM CEST:
+		- Premium:
+			- authelia: v4.39.8.1 --> v4.39.8.2
+	- 2025.09.02 @ 01:09 PM CEST:
+		- Premium:
+			- authelia: v4.39.8.0 --> v4.39.8.1
+	- 2025.09.02 @ 01:04 PM CEST:
+		- Premium:
+			- authelia: v4.39.8 --> v4.39.8.0
+	- 2025.09.02 @ 10:43 AM CEST:
+		- Stable:
+			- cloudcommander: v18.7.4 --> v18.8.0
+			- ersatztv: v25.4.0 --> v25.5.0
+			- jackett: v0.22.2384 --> v0.22.2390
+			- minecraft-bedrock: v2025.7.0 --> v2025.9.0
+			- n8n: v1.109.1 --> v1.110.0
+			- nzbget: v25.2.0 --> v25.3.0
+			- outline: v0.87.1 --> v0.87.3
+		- Premium:
+			- authelia: v4.39.7 --> v4.39.8
+			- traefik: v3.5.1 --> v3.5.1
 	- 2025.09.01 @ 09:03 AM CEST:
 		- Stable:
 			- cloudcommander: v18.7.3 --> v18.7.4
