@@ -29,6 +29,64 @@ Now you should be able to update your applications again.
 ### 2025.01.08: Thanks to [@hey101](https://github.com/hey101/TrueCharts-Update-Script), I have now a more automated update system. All apps should now as much up-to-date as the original TrueCharts currently is. Feel free to open an issue if you miss an update!
 
 - ### Changelog:
+	- 2026.01.09 @ 05:45 PM CET:
+		- Stable:
+			- anonaddy: v1.3.5 --> v1.3.6
+			- clickhouse: v25.12.1.649 --> v25.12.2.54
+			- cloudcommander: v19.0.17 --> v19.1.0
+			- code-server: v4.106.3 --> v4.107.0
+			- crafty-4: v4.6.2 --> v4.7.0
+			- dashdot: v6.2.0 --> v6.2.4
+			- discordgsm: v2.19.0 --> v2.20.0
+			- filebrowser: v2.52.0 --> v2.53.1
+			- fireshare: v1.3.2 --> v1.3.3
+			- flexget: v3.18.32 --> v3.18.34
+			- fluidd: v1.36.1 --> v1.36.2
+			- freshrss: v1.27.1 --> v1.28.0
+			- ghostfolio: v2.224.2 --> v2.228.0
+			- gravity: v0.28.7 --> v0.29.0
+			- healthchecks: v3.13.20251222 --> v3.13.20260104
+			- homarr: v1.47.0 --> v1.49.1
+			- home-assistant: v2025.12.4 --> v2026.1.0
+			- homebox: v0.21.0 --> v0.22.3
+			- ispy-agent-dvr: v7.0.8.0 --> v7.1.0.0
+			- jenkins: v2.543.0 --> v2.544.0
+			- librespeed: v5.4.20240804 --> v5.5.0
+			- lidarr-plugins: v3.1.1.4884 --> v3.1.1.4901
+			- linkding: v1.44.2 --> v1.45.0
+			- linkwarden: v2.13.3 --> v2.13.5
+			- maintainerr: v2.25.0 --> v2.26.0
+			- mealie: v3.8.0 --> v3.9.2
+			- metabase: v0.57.7 --> v0.58.1
+			- metube: v2025.12.14 --> v2025.12.30
+			- minecraft-java: v2025.12.0 --> v2025.12.1
+			- n8n: v2.2.1 --> v2.3.0
+			- ollama: v0.13.5 --> v0.13.5
+			- oscam: v11907.0.0 --> v11918.0.0
+			- piwigo: v16.1.0 --> v16.2.0
+			- plextraktsync: v0.34.19 --> v0.34.20
+			- pocketmine-mp: v5.39.1 --> v5.39.2
+			- qinglong: v2.20.0 --> v2.20.1
+			- romm: v4.4.0 --> v4.5.0
+			- seafile: v13.0.12 --> v13.0.15
+			- slink: v1.8.3 --> v1.8.4
+			- speedtest-tracker: v1.13.3 --> v1.13.4
+			- strapi: v5.33.0 --> v5.33.1
+			- syncthing: v2.0.12 --> v2.0.13
+			- tailscale: v1.92.4 --> v1.92.5
+			- tauticord: v5.15.0 --> v5.15.1
+			- traggo: v0.7.1 --> v0.8.1
+			- unmanic: v0.3.0 --> v0.3.1
+			- unpoller: v2.20.1 --> v2.21.0
+			- wekan: v8.17.0 --> v8.19.0
+			- whisparr: v3.0.2.1825 --> v3.0.2.2034
+			- whoogle: v1.1.2 --> v1.2.2
+			- wikijs: v2.5.308 --> v2.5.310
+			- xen-orchestra: v5.194.1 --> v5.194.5
+			- xwiki: v17.10.0 --> v17.10.2
+			- zigbee2mqtt: v2.7.1 --> v2.7.2
+		- Premium:
+			- traefik: v3.6.5.02 --> v3.6.6
 	- 2025.12.25 @ 09:11 PM CET:
 		- Premium:
 			- nextcloud: v32.0.3 --> v32.0.1
