@@ -1,5 +1,167 @@
 # TrueNAS SCALE catalog
 
+> [!IMPORTANT]
+> # DEPRECATION NOTICE
+> After almost 1.5 years of continuous updates, I have just pushed a final update!
+> 
+> I'll archive this repository shortly. The base OS TrueNAS SCALE 23.10 (or 24.04) is now over respectively almost 2 years old and completely outdated. Maintaining this catalog and keeping it functional was very time-consuming. Especially in recent months, more and more applications have stopped working properly.
+>
+> And I suspect that there aren't many people left who still use this catalog anyway.
+> 
+> I therefore pulled myself together and finally migrated my ~50 applications to Docker-based TrueNAS SCALE 25.10 :)
+> 
+> It took me about 5 days, but I am extremely satisfied with the new Docker-based backend.
+> 
+> Everything—especially TrueNAS SCALE—runs much more smoothly. You no longer have to wait minutes for the app configuration window to load ;)
+> 
+> And there is no vendor lock-in as with the customized Kubernetes backend up to SCALE 24.04.
+> 
+> Since SCALE's Docker GUI is very limited, I only installed Docker management apps Komodo & Arcane within the native SCALE Docker GUI. All other apps are installed and managed with Arcane & Komodo.
+
+# MIGRATION TUTORIAL
+I have written down the steps I took for the backup/migration to SCALE 25.10:
+- **Prerequisities:**
+  - I'll use this base path as our main migration folder. Please adjust it accordingly in each script mentioned below!
+	  ```
+	  /mnt/<YOUR-POOL>/migration
+	  ```
+  - Run all commands as `root` user
+  - Check your backups before starting the migration! Did you backup all apps? Have you forgotten something?
+
+1. **Backup App configurations & Postgres databases**
+
+   I found a script which is super helpful in backing up all application settings/configurations and postgres databases:
+
+   https://github.com/r0k5t4r/truenas-exp-truecharts-apps (_I had to make a few minor adjustments to make it work._)
+
+   1. Create a directory and a new file for the script:
+	   ```
+	   mkdir nano /mnt/<YOUR-POOL>/migration/scripts
+	   nano /mnt/<YOUR-POOL>/migration/scripts/truenas-export-truechart-apps.sh
+	   ```
+   2. copy-paste my adjusted version:
+      
+      https://github.com/v3DJG6GL/truecharts_archive/blob/main/migration/scripts/truenas-export-truechart-apps.sh
+   4. Download dependencies and make them executable
+	   ```
+	   cd /mnt/<YOUR-POOL>/migration/scripts
+	   mkdir ./bin
+	   mkdir ./bin/yt
+	   wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O ./bin/yq &&\
+	   chmod +x ./bin/yq
+	   ```
+   5. Make the script executable:
+	   ```
+	   chmod +x /mnt/<YOUR-POOL>/migration/scripts/truenas-export-truechart-apps.sh
+	   ```
+   6. Run the script:
+	   ```
+	   bash /mnt/<YOUR-POOL>/migration/scripts/truenas-export-truechart-apps.sh
+	   ```
+	This script _should_ backup all application configurations and postgres databases. However, I felt more comfortable performing multiple backups using different tools. See steps 2 and 3.
+
+3. **Backup Postgres databases**
+   
+   If you have not yet used an automated script to regularly back up your Postgres databases, use this script to back up all Postgres databases in the directory
+   ```
+   /mnt/<YOUR-POOL>/migration/backup_pg
+   ```
+
+   1. Create a new file for the script:
+	   ```
+	   nano /mnt/<YOUR-POOL>/migration/scripts/tcdbbackup.sh
+	   ```
+   2. copy-paste this script:
+   https://github.com/v3DJG6GL/truecharts_archive/blob/main/migration/scripts/tcdbbackup.sh
+   3. Make the script executable:
+	   ```
+	   chmod +x /mnt/<YOUR-POOL>/migration/scripts/tcdbbackup.sh
+	   ```
+   4. Run the script:
+	   ```
+	   bash /mnt/<YOUR-POOL>/migration/scripts/tcdbbackup.sh
+	   ```
+5. **Backup Postgres databases credentials**
+   1. Create a new file for the script:
+	   ```
+	   nano /mnt/<YOUR-POOL>/migration/scripts/tcdbinfo.sh
+	   ```
+   2. copy-paste this script:
+   https://github.com/v3DJG6GL/truecharts_archive/blob/main/migration/scripts/tcdbinfo.sh
+   3. Make the script executable:
+	   ```
+	   chmod +x /mnt/<YOUR-POOL>/migration/scripts/tcdbinfo.sh
+	   ```
+   4. Run the script and save the output:
+	   ```
+	   bash /mnt/<YOUR-POOL>/migration/scripts/tcdbinfo.sh
+	   ```
+
+6. **Backup PVCs**
+   
+   Since many of my apps used PVCs for some of their data, I also had to back them up.
+
+   Use HeavyScript for this: https://github.com/heavybullets8/heavy_script
+   1. Mount PVC
+	   ```
+	   heavyscript pvc --mount <APPNAME>
+	   ```
+   2. Recursively copy everything from mounted pvc and preserve permissions:
+	   ```
+	   mkdir /mnt/<YOUR-POOL>/migration/backup_pvc
+	   cp -r -a /mnt/mounted_pvc/<APPNAME> /mnt/<YOUR-POOL>/migration/backup_pvc
+	   ```
+8. **Create a backup with HeavyScript**
+   
+   I also created a backup with HeavyScript. I was lucky, because these backups contain important secrets that I didn't find in any other backup :)
+   1. Set backup location
+      
+      Since we will be using our directory `/mnt/<YOUR-POOL>/migration/backup_heavyscript` for all migration backups, I have changed the default directory for HeavyScript backups:
+	   ```
+	   nano /root/heavy_script/config.ini
+	   ```
+      Find and edit these config lines accordingly:
+        ```
+	    [databases]
+		## true/false options ##
+		# Enable or disable database dumps
+		enabled=true
+		
+		## String options ##
+		# File path for database dump folder
+		dump_folder="/mnt/<YOUR-POOL>/migration/backup_heavyscript"
+	    ```
+   3. Run HeavyScript backup command
+	   ```
+	   mkdir /mnt/<YOUR-POOL>/migration/backup_heavyscript
+	   heavyscript backup --create 0
+	   ```
+10. **In-App backups**
+
+    Some apps support in-app backups. Check your apps and create in-app backups as an additional saveguard.
+
+    I was lucky I had such an in-app backup from Jellyfin which made restoration much easier :)
+13. **Screenshot your app configurations!**
+
+    This was probably the most time-consuming part of my backup strategy: I additionally made screenshots of all my SCALE application configurations.
+
+    _It's not strictly needed but I was glad to be able to fall back on it in some occasions._
+    
+## That's it! Happy migrating to all those who are as lazy as me and are still procrastinating.
+
+&nbsp;
+&nbsp;
+
+> [!NOTE]
+> # ARCHIVE
+> Here you can find the archived content of this README.md as e.g. tutorials, changelog, etc...
+
+<details>
+<summary>
+
+## Archive - Introduction
+
+</summary>
 This is a fork of the archived TrueCharts App Catalog for TrueNAS SCALE.
 
 Since iX-Systems will deprecate their Kubernets/Helm-based GUI app plattform in Q4 2024, TrueCharts already deprecated their TrueNAS catalog. Thus, you cannot update your already installed applications anymore although there's currently no migration to another Kubernetes plattform available. There will be a migration to their new Kubernetes-based plattform(s).  
@@ -27,6 +189,14 @@ Therefore I decided to fork their archived chart repository and manually push so
 Now you should be able to update your applications again.
 
 ### 2025.01.08: Thanks to [@hey101](https://github.com/hey101/TrueCharts-Update-Script), I have now a more automated update system. All apps should now as much up-to-date as the original TrueCharts currently is. Feel free to open an issue if you miss an update!
+</details>
+
+<details>
+<summary>
+
+## Archive - Changelog
+
+</summary>
 
 - ### Changelog:
 	- 2026.01.09 @ 05:45 PM CET:
@@ -4926,6 +5096,16 @@ Now you should be able to update your applications again.
     - stun-turn-server: latest
     - unpackerr: v0.14.0
 
+</details>
+
+<details>
+
+<summary>
+
+## Archive - How I update this catalog
+
+</summary>
+
 # How I update this catalog:
 
 **I use following software to make changes to the catalog:**
@@ -4986,3 +5166,5 @@ Now you should be able to update your applications again.
    ```
    With some exceptions I always use the images which TrueCharts uses. I copy them from the TrueCharts repository:
    https://github.com/truecharts/charts/blob/master/charts/stable/maintainerr/values.yaml
+
+</details>
