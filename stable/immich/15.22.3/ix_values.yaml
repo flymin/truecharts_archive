@@ -139,10 +139,9 @@ cnpg:
     database: immich
     type: vectors
     cluster:
-      imageName: ghcr.io/immich-app/postgres:16-vectorchord0.3.0-pgvectors0.2.1@sha256:ee4eb11fcd8e902cc518a6444078b65729ffe2d1102584bbb914a6bfe102d2d7
+      imageName: ghcr.io/tensorchord/cloudnative-vectorchord:16-0.3.0@sha256:69c827b85380454b46260219a93c9fd13942453200d1d07f856a17d7af0df8b2
       preloadLibraries:
         - vchord.so
-        - vectors.so
       initdb:
         postInitApplicationSQL:
         - CREATE EXTENSION IF NOT EXISTS cube;
