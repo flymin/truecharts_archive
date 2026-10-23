@@ -1,5 +1,4 @@
 annotations:
-  max_scale_version: 24.04.1
   min_scale_version: 24.04.0
   truecharts.org/category: cloud
   truecharts.org/max_helm_version: "3.15"
