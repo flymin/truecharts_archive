@@ -29,7 +29,7 @@ keywords:
 - http
 - web
 - php
-kubeVersion: '>=1.33.0-0'
+kubeVersion: '>=1.25.0-0'
 maintainers:
 - email: info@truecharts.org
   name: TrueCharts
