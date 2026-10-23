@@ -1,0 +1,2 @@
+oci.trueforge.org/truecharts/nextcloud:47.0.0
+layers=sha256:5fdec18edf92ae34dc382916f94da1c60d280b30695755e4d6942a58a68e64ab

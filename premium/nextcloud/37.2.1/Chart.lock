@@ -1,0 +1,9 @@
+dependencies:
+- name: common
+  repository: oci://oci.trueforge.org/truecharts
+  version: 28.18.0
+- name: redis
+  repository: oci://oci.trueforge.org/truecharts
+  version: 17.6.2
+digest: sha256:ba74062b08c0a5c6e6e21a778fa8739cebe54c7a5779e84e3fab33417c027ba2
+generated: "2025-09-16T22:32:45.132661797Z"

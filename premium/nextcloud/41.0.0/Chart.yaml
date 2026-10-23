@@ -1,0 +1,49 @@
+annotations:
+  artifacthub.io/links: |-
+    - name: support
+    url: https://discord.com/invite/tVsPTHWTtr
+  trueforge.org/category: cloud
+  trueforge.org/max_helm_version: "4.1"
+  trueforge.org/max_kubernetes_version: 1.35.0
+  trueforge.org/min_helm_version: "3.14"
+  trueforge.org/train: stable
+apiVersion: v2
+appVersion: 33.0.0
+dependencies:
+- name: common
+  repository: oci://oci.trueforge.org/truecharts
+  version: 28.33.4
+- alias: redis
+  condition: redis.enabled
+  name: valkey
+  repository: oci://oci.trueforge.org/truecharts
+  version: 0.4.4
+description: A private cloud server that puts the control and security of your own
+  data back into your hands.
+home: https://trueforge.org/truetech/truecharts/charts/stable/nextcloud
+icon: https://trueforge.org/img/hotlink-ok/chart-icons/nextcloud.webp
+keywords:
+- nextcloud
+- storage
+- http
+- web
+- php
+kubeVersion: '>=1.27.0-0'
+maintainers:
+- email: info@trueforge.org
+  name: TrueCharts
+  url: https://trueforge.org
+name: nextcloud
+sources:
+- https://github.com/nextcloud/docker
+- https://github.com/nextcloud/helm
+- https://github.com/trueforge-org/containers/tree/main/apps/nextcloud-fpm
+- https://github.com/trueforge-org/containers/tree/main/apps/nextcloud-imaginary
+- https://github.com/trueforge-org/containers/tree/main/apps/nextcloud-notify-push
+- https://github.com/trueforge-org/containers/tree/main/apps/nginx
+- https://github.com/trueforge-org/truecharts/tree/master/charts/stable/nextcloud
+- https://github.com/trueforge/truecharts/tree/master/charts/stable/nextcloud
+- https://hub.docker.com/r/clamav/clamav
+- https://hub.docker.com/r/collabora/code
+type: application
+version: 41.0.0

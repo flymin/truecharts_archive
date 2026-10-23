@@ -13,10 +13,7 @@ args:
   - |
     echo "Waiting Nextcloud [{{ $ncURL }}] to be ready and installed..."
     until \
-          REQUEST_METHOD="GET" \
-          SCRIPT_NAME="status.php" \
-          SCRIPT_FILENAME="status.php" \
-          cgi-fcgi -bind -connect "{{ $ncURL }}" | grep -q '"installed":true';
+          bash -c "exec 3<>/dev/tcp/$(echo {{ $ncURL }} | cut -d: -f1)/$(echo {{ $ncURL }} | cut -d: -f2)" 2>/dev/null;
     do
       echo "Waiting Nextcloud [{{ $ncURL }}] to be ready and installed..."
       sleep 3

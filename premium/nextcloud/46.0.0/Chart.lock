@@ -1,0 +1,9 @@
+dependencies:
+- name: common
+  repository: oci://oci.trueforge.org/truecharts
+  version: 29.6.0
+- name: valkey
+  repository: oci://oci.trueforge.org/truecharts
+  version: 2.4.2
+digest: sha256:b5d17e094f44da64eed51930b42c97047ddb44a8743d4026fc068befe98091ae
+generated: "2026-06-27T18:51:41.622934274Z"

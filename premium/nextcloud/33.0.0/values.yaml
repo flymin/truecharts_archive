@@ -148,11 +148,17 @@ workload:
             liveness:
               enabled: true
               type: exec
-              command: /healthcheck.sh
+              command:
+              - /bin/sh
+              - -c
+              - test -f /var/www/html/config/config.php && php -v >/dev/null 2>&1
             readiness:
               enabled: true
               type: exec
-              command: /healthcheck.sh
+              command:
+              - /bin/sh
+              - -c
+              - test -f /var/www/html/config/config.php && php -v >/dev/null 2>&1
             startup:
               enabled: true
               type: tcp
